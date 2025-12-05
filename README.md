@@ -5,6 +5,12 @@ Let us build a Small Language Model (SLM) from scratch. We will try to keep the 
 
 This repository contains files related to generate, train and use SLM based on the "TinyStories" dataset. The complete process of Model creation is divided in following steps.
 
+### Install required packages
+* Install the necessary packages from the requirements.txt using following command
+```
+pip install -r requirements.txt
+```
+
 ### Step 1: Get the dataset
 * Get the ___'TinyStories'___ dataset from the `datasets` module. 
     > <br/>
