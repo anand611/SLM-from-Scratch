@@ -15,9 +15,9 @@ pip install -r requirements.txt
 * Get the ___'TinyStories'___ dataset from the `datasets` module. 
     > <br/>
     > To perform this action, run `load_dataset.py`.
-      ```
-      python load_dataset.py
-      ```
+    ```
+    python load_dataset.py
+    ```
 
 ### Step 2: Tokenization
 * We define __gpt2__ sub-word tokenizer with BPE(Byte Pair Encoding) based encoding from the `tiktoken` module. This is used to tokenize the dataset into tokenIDs.
