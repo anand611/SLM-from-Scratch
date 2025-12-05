@@ -24,9 +24,9 @@ pip install -r requirements.txt
 * We are generating the tokenized train and validation datasets and storing them on disk (___train.bin___ , ___validation.bin___). To use the optimal way of writing data, *sharding* is used.
     > <br/>
     > To perform this action, run the `tokenization.py`.
-      ```
-      python tokenization.py
-      ```  
+    ```
+    python tokenization.py
+    ```  
 * After successful tokenization, ___train.bin___ , ___validation.bin___ are generated. 
 
 ### Step 3: Batch Retrieval
@@ -43,9 +43,9 @@ pip install -r requirements.txt
 * To execute the model with a user query and context, the `generate()` method is provided.
     > <br/>
     > To create the model, run `model.py`.
-      ```
-      python model.py
-      ```
+    ```
+    python model.py
+    ```
 
 ### Step 5: Model Training
 * In this step, we are creating the Model Training. We are defining training parameters, the Hyperparameters Tuning schedules, and loss measurements. Here `LinearLR` scheduler is used in warmup epochs, and in the later stage `CosineAnnealingLR` scheduler is used to update model parameters. For weight update, `AdamW` optimizer is used to make the training more effective by allowing weight decay and learning rate adjustments independently.
@@ -53,9 +53,9 @@ pip install -r requirements.txt
 * We are saving the best model's parameters in file ___'best_model_params.pt'___. This can be used to test the model with user inputs.
     > <br/>
     > To perform model training, run the `training.py`.
-      ```
-      python training.py
-      ```
+    ```
+    python training.py
+    ```
 
 ## How to use the Model?
 * To run the test on the created model, 
@@ -63,6 +63,6 @@ pip install -r requirements.txt
   2. Update *_sentence_* parameter with your topic of interest. 
   3. Save and run `model_usage.py`
      To run file
-     ```
-     python model_usage.py
-     ```
+    ```
+    python model_usage.py
+    ```
